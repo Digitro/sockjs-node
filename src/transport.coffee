@@ -134,7 +134,7 @@ class Session
                     'x-forwarded-host', 'x-forwarded-port', \
                     'x-cluster-client-ip', 'via', 'x-real-ip', \
                     'x-forwarded-proto', 'x-ssl', 'dnt', \
-                    'host', 'user-agent', 'accept-language']
+                    'host', 'user-agent', 'accept-language', 'cookie']
             headers[key] = req.headers[key] if req.headers[key]
         if headers
             @connection.headers = headers
